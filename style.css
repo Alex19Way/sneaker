@@ -141,6 +141,12 @@ i:hover{
               margin-right: 2rem;
             }
             .cart-section-desc{flex: 1;}
+            .cart-section-price{
+              display: flex;
+              justify-content: space-between;
+              border: solid 1px black;
+              width: 85%;
+            }
             .total{font-weight: bold;}
             .fa-trash{padding-left: 1rem;}
             .cart-section-checkout{
@@ -329,7 +335,10 @@ i:hover{
     justify-content: space-between;
     align-items: center;
           }
-          .profile{width: 2.5rem;}
+          .profile{
+            width: 2.5rem;
+            pointer-events: none;
+          }
           .cart{
             font-size: 2rem;
             position: relative;
@@ -398,11 +407,46 @@ i:hover{
       top: 100%;
       right: 0%;
       width: 50vw;
-      max-width: 600px;
+      min-width: 250px;
       font-size: 1.5rem;
       z-index: 2;
+      }
+
+      .cart-section h3{/*scritta "cart"*/
+        padding: 1.5rem;
+        font-size: 2rem;
+      }
+      .empty{/*scritta "the cart is empty"*/
+        font-size: 1.5rem;
+        height: 10rem;
+      }
+      .cart-section-container{
+        padding: 2rem;
+      }
+      .cart-section-container2{/*container del prodotto*/
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+      }
+          .cart-section-image{
+            width: 6vw;
+            border-radius: 0.5rem;
+            margin-right: 1rem;
+          }
+          .cart-section-desc{
+            flex: 1;
+            font-size: 1.2rem;
+          }
+          .total{font-weight: bold;}
+          .fa-trash{padding-left: 1rem;}
+          .cart-section-checkout{
+            width: 100%;
+            font-size: 1.2rem;
+            padding: 1.5rem;
           }
 
+/*carrello aperto FINE*/
 /*HEADER FINE*/
 
 
@@ -454,7 +498,7 @@ i:hover{
           .discount{
             position: absolute;
             top: 0;
-            right: 50%;
+            left: 50%;
           }
 
       /*sezione pulsanti*/

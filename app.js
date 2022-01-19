@@ -69,7 +69,7 @@ add_btn.addEventListener("click",()=>{
         quantity_value+=counter;
         cart_quantity.innerText=quantity_value;
         let p=quantity_value*125;
-        let str="$"+p;
+        let str="$ "+p;
         cart_total.innerText=str;
         check();
         cart_div.classList.remove("hide");
